@@ -1,12 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teton Summit</title>
-</head>
-<body>
-  <h1>Welcome to Teton Summit</h1>
-  <p>This is a placeholder site. Replace this with your own content.</p>
-</body>
-</html>
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-900 p-4 md:p-8">
+      <header className="border-b pb-4 mb-6">
+        <div>
+          <h1 className="text-4xl font-bold text-blue-700">Teton Summit</h1>
+          <p className="text-lg text-gray-600">Excavation | Property Management</p>
+        </div>
+      </header>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-2 text-blue-600">Our Services</h2>
+        <ul className="space-y-2 list-disc pl-5">
+          <li>Foundation and site excavation</li>
+          <li>Utility trenching and installation</li>
+          <li>Driveway and final grading</li>
+          <li>Property maintenance and snow removal</li>
+          <li>Project management</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-2 text-blue-600">Why Choose Us</h2>
+        <p className="text-gray-700">
+          With experience across excavation, property care, and construction management, Teton Summit offers dependable service with local expertise. We're committed to precision, safety, and client satisfaction in every project. Our clients consistently highlight our good communication and quality work as key reasons they return.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-2 text-blue-600">Contact Us</h2>
+        <p>Email: <a href="mailto:Brycetetonsummit@gmail.com" className="text-blue-600">Brycetetonsummit@gmail.com</a></p>
+        <p>Phone: (303) 483-1791</p>
+        <p>Based in Teton Valley, Idaho</p>
+      </section>
+
+      <footer className="pt-4 border-t text-sm text-gray-500">
+        &copy; {new Date().getFullYear()} Teton Summit. All rights reserved.
+      </footer>
+    </div>
+  );
+}
